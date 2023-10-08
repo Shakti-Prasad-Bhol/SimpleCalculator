@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="188dp"
+        android:textAlignment="viewEnd"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/AC"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backspace"
+        app:layout_constraintEnd_toStartOf="@+id/backspace"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/a" />
+
+    <ImageView
+        android:id="@+id/backspace"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/percentage"
+        app:layout_constraintEnd_toStartOf="@+id/percentage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/AC"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/b" />
+
+    <ImageView
+        android:id="@+id/percentage"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/division"
+        app:layout_constraintEnd_toStartOf="@+id/division"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/backspace"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/p" />
+
+    <ImageView
+        android:id="@+id/division"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/percentage"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:srcCompat="@drawable/d" />
+
+    <ImageView
+        android:id="@+id/multiplication"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/nine"
+        app:layout_constraintTop_toBottomOf="@+id/backspace"
+        app:srcCompat="@drawable/m" />
+
+    <ImageView
+        android:id="@+id/addition"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/three"
+        app:layout_constraintTop_toTopOf="@+id/three"
+        app:srcCompat="@drawable/ad" />
+
+    <ImageView
+        android:id="@+id/equal"
+        android:layout_width="94dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="@+id/point"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/point"
+        app:layout_constraintTop_toTopOf="@+id/point"
+        app:srcCompat="@drawable/e" />
+
+    <ImageView
+        android:id="@+id/seven"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/eight"
+        app:layout_constraintEnd_toStartOf="@+id/eight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AC"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/seven"
+        android:contentDescription="7" />
+
+    <ImageView
+        android:id="@+id/eight"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nine"
+        app:layout_constraintEnd_toStartOf="@+id/nine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/seven"
+        app:layout_constraintTop_toBottomOf="@+id/backspace"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/eight"
+        android:contentDescription="8" />
+
+    <ImageView
+        android:id="@+id/nine"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/multiplication"
+        app:layout_constraintEnd_toStartOf="@+id/multiplication"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eight"
+        app:layout_constraintTop_toBottomOf="@+id/percentage"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/nine"
+        android:contentDescription="9" />
+
+    <ImageView
+        android:id="@+id/four"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/five"
+        app:layout_constraintEnd_toStartOf="@+id/five"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/four"
+        android:contentDescription="4" />
+
+    <ImageView
+        android:id="@+id/five"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/six"
+        app:layout_constraintEnd_toStartOf="@+id/six"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/four"
+        app:srcCompat="@drawable/five"
+        android:contentDescription="5" />
+
+    <ImageView
+        android:id="@+id/one"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/two"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtraction"
+        app:srcCompat="@drawable/one"
+        android:contentDescription="1" />
+
+    <ImageView
+        android:id="@+id/six"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/subtraction"
+        app:layout_constraintEnd_toStartOf="@+id/subtraction"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/five"
+        app:srcCompat="@drawable/six"
+        android:contentDescription="6" />
+
+    <ImageView
+        android:id="@+id/two"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/three"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/one"
+        app:layout_constraintTop_toTopOf="@+id/one"
+        app:srcCompat="@drawable/two"
+        android:contentDescription="2" />
+
+    <ImageView
+        android:id="@+id/three"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/addition"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/two"
+        app:layout_constraintTop_toTopOf="@+id/two"
+        app:srcCompat="@drawable/three"
+        android:contentDescription="3" />
+
+    <ImageView
+        android:id="@+id/zero"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/point"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/imageView20"
+        app:srcCompat="@drawable/zero"
+        android:contentDescription="0" />
+
+    <ImageView
+        android:id="@+id/point"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/zero"
+        app:layout_constraintEnd_toStartOf="@+id/equal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/zero"
+        app:layout_constraintTop_toTopOf="@+id/zero"
+        app:srcCompat="@drawable/poi" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/zero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tag" />
+
+    <ImageView
+        android:id="@+id/subtraction"
+        android:layout_width="93dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/six"
+        app:layout_constraintTop_toBottomOf="@+id/multiplication"
+        app:srcCompat="@drawable/mi" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="414dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="none"
+        android:textAlignment="viewEnd"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
